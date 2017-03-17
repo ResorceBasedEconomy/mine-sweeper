@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/mine.css">
+</head>
+<body  class="img" onload="initGame()" oncontextmenu="return false;">
+ 
+    <div class="header">Mine Sweeper</div>
+    <!--buttons for level choosing-->
+    <div class="level">
+        <button class="btn btn-1" onclick="updateMines(1)">easy</button>
+        <button class="btn btn-2" onclick="updateMines(2)">intermidate</button>
+        <button class="btn btn-3" onclick="updateMines(3)">hard</button>
+    </div>
+    <!--restart button, time and mines counters-->
+    <div class="display">
+        <div id="minecount"></div>
+        <div><button class="btn-starter" onclick="initGame()"></button></div>
+        <div id="seconds"></div>
+    </div>
+    <!--The table of the board-->
+    <table border="3" cellpadding="10px">
+        <tbody class="tbody">
+
+        </tbody>
+    </table>
+    <!--shown only on a win-->
+    <div class="winner">Mind Blowing!!!</div>
+
+    <footer class="footer">&copy; created by Mark Fridman as part of coding study in "Coding Academy"</footer>
+    <script src="js/mine.js"></script>
+    <script src="js/utils.js"></script>
+</body>
+</html>

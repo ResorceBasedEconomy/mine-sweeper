@@ -1,0 +1,170 @@
+@font-face {
+    font-family: gas;
+    src: url("GAS.ttf");
+}
+@font-face {
+    font-family: arbutus;
+    src: url("arbutus.ttf");
+}
+thead {
+    height: 1.2em;   
+    left: 30px;
+    background-color: red;
+}
+
+.display {
+    margin: auto;
+    width: 259px;
+    overflow: hidden;
+    padding-left: 47px;
+}
+.display > div {
+    float: left;
+    width: 70px;
+    margin: 0 5px;
+}
+
+table {
+    margin: 0 auto;
+    margin-top: 1em;
+    border: none;
+    border-collapse: separate;
+    border-spacing: 1px 1px;
+    table-layout:fixed;
+}
+.cell {
+
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.3em;
+    border-radius: 5px;
+    color: white;
+    background-color: purple; 
+    border: 2px solid;
+}
+
+.flaged {   
+    background: linen url("flag.png") no-repeat center;
+    background-size: 35px 30px;
+    width: 10px;
+    height: 10px;
+} 
+
+.btn-starter {
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 44px;
+    width: 44px;
+    margin-left: 13px;
+    margin-top: 2px;
+    background: url("skullP.png") no-repeat center;
+    background-size: 32px 32px;
+    background-color: #F51;
+    border: solid;
+}
+.btn{
+    border: 1px black solid;
+    cursor: pointer;
+    font-family: 'gas';  
+    height: 27px;
+    width: 90px;    
+    display: inline-block;
+}
+.level {
+    padding-left: 7px;
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.btn-starter:hover {
+    background-color: #E11;
+}
+.wrongGuess {
+    background-image: url("bombend.png");
+    background: url("bombend.png") no-repeat center; 
+    background-size: 30px 30px;
+    background-color: lightseagreen;
+    border-radius: 5px;
+}
+.img {
+    background: url("background3.jpg") no-repeat;
+    
+}
+#seconds {
+    overflow: hidden;
+    background-color: purple;
+    height: 40px;
+    font-size: 2.4em;
+    font-family: "gas";
+    border: solid;
+    border-radius: 3px;
+    color: white;   
+    cursor: context-menu; 
+}
+#minecount {
+     overflow: hidden;
+     background-color: purple;
+     height: 40px;
+     font-size: 2.4em;
+     width: 50px;
+     font-family: "gas";
+     border: solid;
+     border-radius: 3px;
+     color: white;
+     cursor: context-menu; 
+}
+.header {
+    font-family: "gas";
+    font-size: 5em;
+    text-align: center;
+    text-shadow: -1px 0 #FFF, 0 1px #FFF, 1px 0 #FFF, 0 -1px #FFF;  
+}
+td {
+    width: 26px;
+    height: 26px;
+    table-layout:fixed;
+    overflow:hidden;
+    margin: 2px;
+    font-family: "arbutus";
+    white-space: nowrap;
+    cursor: context-menu; 
+}
+.boom {
+
+    background: url("boom.png") no-repeat center; 
+    background-size: 118px 52px;
+    background-color: red;
+    border-radius: 5px;
+}
+.revealed {
+    background-color: lightseagreen;
+}
+.mine {
+    background: url("wrong.jpg") no-repeat center; 
+    background-size: 45px 45px; 
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+}
+.cell:hover {
+    background-color: slategrey;
+    opacity: 0.9;
+}
+footer {
+    font-family: "arbutus";
+    color: purple;
+    margin: 51px 134px;
+    text-shadow: -1px 0 #FFF, 0 1px #FFF, 1px 0 #FFF, 0 -1px #FFF;
+    text-align: center;  
+    cursor: context-menu; 
+}
+.winner {
+    font-size: 2.8em;
+    font-family: "arbutus";
+    color: rgb(97, 185, 52);
+    cursor: context-menu; 
+    text-align: center;  
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    display: none;
+}
